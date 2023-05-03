@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #525252;
@@ -13,11 +17,18 @@ body {
 header {
     background-color: #0359a1;
     box-shadow: 0 3px 5px 5px #c0c0c0;
+    display: flex;
     grid-area: 1 / 1 / 2 / 3;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: #f9faf8;
+    font-family: "URW Chancery L";
+    font-size: 3.8rem;
+    text-shadow: 4px 4px #000;
+    margin: 25px 0;
 }
 
 main {
