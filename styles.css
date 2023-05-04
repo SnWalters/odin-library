@@ -47,7 +47,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .add-book > p {
@@ -64,16 +64,18 @@ main {
     width: 50px;
     font-size: 2rem;
     border-radius: 50%;
-    color: #f9faf8;
+    color: #000;
     border: 0;
-    background-color: #000c;
     cursor: pointer;
     box-shadow: 2px 2px 3px 3px #777;
 }
 
-.add-book > button:hover {
-    background-color: #000f;
-    color: #0f0;
+.green {
+    background-color: #84cc1688;
+}
+
+.green:hover {
+    background-color: #84cc16ff;
 }
 
 /* Add Book Form */
