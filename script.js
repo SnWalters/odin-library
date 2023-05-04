@@ -1,3 +1,4 @@
+const checkBox = document.querySelector('#read');
 const formButton = document.querySelector('.form-button');
 const formToggle = document.querySelector('.book-form');
 let myLibrary = [];
@@ -13,6 +14,12 @@ formButton.addEventListener('click', () => {
 
     formToggle.classList.toggle('close');
     formToggle.classList.toggle('open');
+});
+
+checkBox.addEventListener('click', () => {
+    if (checkBox.checked) {
+        console.log('checked')
+    }
 });
 
 function Book(title, author, pages, read) {
