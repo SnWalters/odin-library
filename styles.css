@@ -78,6 +78,14 @@ main {
     background-color: #84cc16ff;
 }
 
+.red {
+    background-color: #b91c1c88;
+}
+
+.red:hover {
+    background-color: #b91c1cff;
+}
+
 /* Add Book Form */
 
 form {
