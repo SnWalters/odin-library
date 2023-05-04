@@ -35,7 +35,7 @@ main {
     grid-area: 2 / 2 / 3 / 3;
 }
 
-/* Sidebar / Add Book Form */
+/* Sidebar */
 
 .sidebar {
     background-color: #c0c0c0;
@@ -74,4 +74,63 @@ main {
 .add-book > button:hover {
     background-color: #000f;
     color: #0f0;
+}
+
+/* Add Book Form */
+
+form {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    margin: 10px 0 25px;
+    padding: 10px;
+    border: none;
+    background-color: #312e81;
+    color: #f9faf8;
+    font-size: 1.3rem;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    outline: none;
+}
+
+label {
+    font-size: 1.5rem;
+    color: #312e81;
+}
+
+label[for=read] {
+    align-self: center;
+}
+
+input[type=checkbox] {
+    height: 25px;
+}
+
+form .btn {
+    margin: 15px auto 0;
+    padding: 10px;
+    background-color: #04aa6d;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 90%;
+    cursor: pointer;
+    opacity: .8;
+}
+
+form .btn:hover {
+    opacity: 1;
+}
+
+.close {
+    display: none;
+}
+
+.open {
+    visibility: visible;
 }
