@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #525252;
+    background-color: #c0c0c0;
 }
 
 #container {
@@ -164,10 +164,13 @@ main p {
 
 main > div:nth-child(odd) {
     background-color: #f9faf8;
+    border: 1px solid black;
 }
 
 main > div:nth-child(even) {
-    background-color: #c0c0c0;
+    background-color: #555;
+    color: #f9faf8;
+    border: 1px solid white;
 }
 
 main button {
