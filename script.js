@@ -41,8 +41,10 @@ const displayLibrary = () => {
         para = document.createElement('p');
         if (entry.read) {
             para.textContent = 'Have Read';
+            para.classList = 'have-read';
         } else {
             para.textContent = 'Not Yet Read';
+            para.classList = 'not-read';
         }
         para.addEventListener('click', () => {
             if (para.textContent === 'Have Read') {
@@ -50,6 +52,8 @@ const displayLibrary = () => {
             } else {
                 para.textContent = 'Have Read'
             }
+            para.classList.toggle('have-read');
+            para.classList.toggle('not-read');
         });
         entryContainer.append(para);
 
