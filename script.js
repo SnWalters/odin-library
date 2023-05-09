@@ -49,8 +49,10 @@ const displayLibrary = () => {
         para.addEventListener('click', () => {
             if (para.textContent === 'Have Read') {
                 para.textContent = 'Not Yet Read';
+                entry.read = false;
             } else {
                 para.textContent = 'Have Read'
+                entry.read = true;
             }
             para.classList.toggle('have-read');
             para.classList.toggle('not-read');
