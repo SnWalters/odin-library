@@ -198,6 +198,7 @@ main button:hover {
     border-radius: 25px;
     width: 25%;
     align-self: center;
+    color: #000;
 }
 
 .have-read {
