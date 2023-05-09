@@ -6,6 +6,16 @@ const addBook = document.querySelector('.btn');
 const main = document.querySelector('main');
 let myLibrary = [];
 
+const removeBook = (title) => {
+    for (let i = 0; i < myLibrary.length; i++) {
+        if (myLibrary[i].title === title) {
+            myLibrary.splice(i, 1);
+            break;
+        };
+    };
+    displayLibrary();
+}
+
 const displayLibrary = () => {
     main.textContent = "";
 
@@ -40,6 +50,14 @@ const displayLibrary = () => {
             entryContainer.append(para);
         };
 
+        let remove = document.createElement('button');
+        remove.classList = 'remove-button';
+        remove.textContent = "Remove Me";
+        entryContainer.append(remove);
+        remove.addEventListener('click', () => {
+            removeBook(entry.title);
+        });
+
         main.append(entryContainer);
     });
 }
@@ -69,4 +87,5 @@ addBook.addEventListener('click', () => {
         inputs[2].value, checkBox.checked));
 
     displayLibrary();
+    
 });
