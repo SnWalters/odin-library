@@ -31,10 +31,6 @@ h1 {
     margin: 25px 0;
 }
 
-main {
-    grid-area: 2 / 2 / 3 / 3;
-}
-
 /* Sidebar */
 
 .sidebar {
@@ -143,4 +139,26 @@ form .btn:hover {
 
 .open {
     visibility: visible;
+}
+
+/* Main Library */
+
+main {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 25px 0;
+}
+
+main > div {
+    margin: 5px auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+main > div:nth-child(odd) {
+    background-color: #f9faf8;
+}
+
+main > div:nth-child(even) {
+    background-color: #c0c0c0;
 }
