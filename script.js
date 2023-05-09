@@ -59,7 +59,7 @@ const displayLibrary = () => {
 
         let remove = document.createElement('button');
         remove.classList = 'remove-button';
-        remove.textContent = "Remove Me";
+        remove.textContent = "Remove Book";
         entryContainer.append(remove);
         remove.addEventListener('click', () => {
             removeBook(entry.title);
