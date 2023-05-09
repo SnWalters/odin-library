@@ -38,17 +38,20 @@ const displayLibrary = () => {
         para.textContent = `Total Pages: ${entry.pages}`;
         entryContainer.append(para);
 
+        para = document.createElement('p');
         if (entry.read) {
-            para = document.createElement('p');
-            para.classList = 'have-read';
             para.textContent = 'Have Read';
-            entryContainer.append(para);
         } else {
-            para = document.createElement('p');
-            para.classList = 'not-read';
             para.textContent = 'Not Yet Read';
-            entryContainer.append(para);
-        };
+        }
+        para.addEventListener('click', () => {
+            if (para.textContent === 'Have Read') {
+                para.textContent = 'Not Yet Read';
+            } else {
+                para.textContent = 'Have Read'
+            }
+        });
+        entryContainer.append(para);
 
         let remove = document.createElement('button');
         remove.classList = 'remove-button';
